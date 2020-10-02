@@ -45,6 +45,7 @@ const {Builder, By, Key, util} = require("selenium-webdriver");
         //Close driver
         await driver.close();
     }
+
  }
 
  module.exports = new firstScript("firefox");
