@@ -2,6 +2,7 @@
 const firstScript = require("./firstScript");
 const locatorScript = require("./locatorScript");
 const formScript = require("./formScript");
+const selectorScript = require("./selectorScript");
 
 async function main (){
 
@@ -15,8 +16,7 @@ async function main (){
     //await formScript.main();
 
     //Selection of Checkbox and Radio Button options.
-    
-
+    await selectorScript.main();
 }
 
 main();
