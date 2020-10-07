@@ -5,6 +5,7 @@ const formScript = require("./formScript");
 const selectorScript = require("./selectorScript");
 const imageScript = require("./imageScript");
 
+
 async function main (){
 
     //First Touch of Selenium during the guru99 course
@@ -16,11 +17,11 @@ async function main (){
     //Forms WebElements: TextBox, Submit Button, sendkeys(), clear() and click()
     //await formScript.main();
 
-    //Selection of Checkbox and Radio Button options.
+    //Selection of Checkbox, Radio Button and Drop-Down Box options.
     //await selectorScript.main();
 
     // Accessing Image Links
-    await imageScript.clickImage(); 
+    //await imageScript.clickImage(); 
 }
 
 main();
