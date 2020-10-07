@@ -3,6 +3,7 @@ const firstScript = require("./firstScript");
 const locatorScript = require("./locatorScript");
 const formScript = require("./formScript");
 const selectorScript = require("./selectorScript");
+const imageScript = require("./imageScript");
 
 async function main (){
 
@@ -16,7 +17,10 @@ async function main (){
     //await formScript.main();
 
     //Selection of Checkbox and Radio Button options.
-    await selectorScript.main();
+    //await selectorScript.main();
+
+    // Accessing Image Links
+    await imageScript.clickImage(); 
 }
 
 main();
