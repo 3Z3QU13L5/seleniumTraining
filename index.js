@@ -4,6 +4,7 @@ const locatorScript = require("./locatorScript");
 const formScript = require("./formScript");
 const selectorScript = require("./selectorScript");
 const imageScript = require("./imageScript");
+const linkScript = require("./linkScript");
 
 
 async function main (){
@@ -21,7 +22,10 @@ async function main (){
     //await selectorScript.main();
 
     // Accessing Image Links
-    //await imageScript.clickImage(); 
+    //await imageScript.clickImage();
+
+    //Accessing links using By.linkText and By.partialLinkText
+    await linkScript.main();
 }
 
 main();
