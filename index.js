@@ -5,6 +5,7 @@ const formScript = require("./formScript");
 const selectorScript = require("./selectorScript");
 const imageScript = require("./imageScript");
 const linkScript = require("./linkScript");
+const actionScript = require("./actionScript");
 
 
 async function main (){
@@ -25,7 +26,10 @@ async function main (){
     //await imageScript.clickImage();
 
     //Accessing links using By.linkText and By.partialLinkText
-    await linkScript.main();
+    //await linkScript.main();
+
+    //Action class: Handling Keyboard & Mouse events
+    await actionScript.main();
 }
 
 main();
