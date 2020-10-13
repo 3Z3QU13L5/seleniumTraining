@@ -6,6 +6,7 @@ const selectorScript = require("./selectorScript");
 const imageScript = require("./imageScript");
 const linkScript = require("./linkScript");
 const actionScript = require("./actionScript");
+const fileScript = require("./fileScript");
 
 
 async function main (){
@@ -29,7 +30,10 @@ async function main (){
     //await linkScript.main();
 
     //Action class: Handling Keyboard & Mouse events
-    await actionScript.main();
+    //await actionScript.main();
+
+    //Uploading and Downloading files
+    await fileScript.main();
 }
 
 main();
