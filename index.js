@@ -7,6 +7,7 @@ const imageScript = require("./imageScript");
 const linkScript = require("./linkScript");
 const actionScript = require("./actionScript");
 const fileScript = require("./fileScript");
+const xpathScript = require("./xPathScript");
 
 
 async function main (){
@@ -33,7 +34,10 @@ async function main (){
     //await actionScript.main();
 
     //Uploading and Downloading files
-    await fileScript.main();
+    //await fileScript.main();
+    
+    //Using XPath to handle complex and dynamic elements in Selenium
+    await xpathScript.main(); 
 }
 
 main();
