@@ -8,7 +8,7 @@ const linkScript = require("./linkScript");
 const actionScript = require("./actionScript");
 const fileScript = require("./fileScript");
 const xpathScript = require("./xPathScript");
-
+const popUpScript = require("./popupScript");
 
 async function main (){
 
@@ -37,7 +37,10 @@ async function main (){
     //await fileScript.main();
     
     //Using XPath to handle complex and dynamic elements in Selenium
-    await xpathScript.main(); 
+    //await xpathScript.main(); 
+
+    //Alert & Popup Handling
+    await popUpScript.main();
 }
 
 main();
